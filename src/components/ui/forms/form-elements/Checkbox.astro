@@ -1,0 +1,33 @@
+---
+type Props = {
+	id: string
+	label: string
+	helperText?: string
+	classes?: string
+}
+const { id, label, helperText, classes } = Astro.props
+---
+
+<div class:list={['input', { [`${classes}`]: classes }]}>
+	<input id={id} type="checkbox" name={id} placeholder={label} required class="input__field peer" />
+	<label for={id} class="input__label">
+		{label}
+	</label>
+
+	{helperText && <span class="input__helper-text">{helperText}</span>}
+</div>
+
+<style>
+	.input {
+		@apply relative w-full;
+	}
+	.input__field {
+		@apply relative h-12 rounded border border-neutral-200 px-4 text-neutral-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid:border-red-500 invalid:text-red-500 focus:border-primary-500 focus:outline-none invalid:focus:border-red-500 focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-neutral-50 disabled:text-neutral-400 dark:border-neutral-800 dark:bg-neutral-900 dark:autofill:bg-neutral-900 dark:disabled:bg-neutral-600;
+	}
+	.input__label {
+		@apply absolute -top-4 left-2 z-[1] cursor-text px-2 text-xs text-neutral-400 peer-autofill:-top-2 peer-required:after:text-red-500 peer-required:after:content-['\00a0*'] peer-invalid:text-red-500 dark:before:bg-neutral-900;
+	}
+	.input__helper-text {
+		@apply absolute h-12 px-4 py-2 text-xs text-neutral-400 transition peer-invalid:text-red-500;
+	}
+</style>

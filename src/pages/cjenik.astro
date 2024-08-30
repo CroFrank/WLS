@@ -1,0 +1,30 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import Price from '../components/blocks/pricing/PricingColumns.astro'
+import FAQ from '../components/blocks/FAQ/Basic.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'WLS | Cjenik',
+	description: 'Cjenik izrade web stranice.'
+}
+// - Page Header
+const header = {
+	title: '<strong>Cjenik </strong> usluge izrade web stranica.',
+	text: 'Cjenik je informativnog karaktera, javite nam se za precizan izračun.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<Price />
+
+	<FAQ classes="bg-slate-50 dark:bg-neutral-900/40" />
+	<CTA />
+</Layout>

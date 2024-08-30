@@ -1,0 +1,33 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import FormHero from '../components/blocks/hero/ContactHero.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+import ContactCards from '../components/blocks/contact/ContactCards.astro'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'Foxi | Get in Touch with Us',
+	description:
+		'Have questions or need assistance? Contact Foxi today for support, inquiries, or feedback. Our team is here to help you make the most of your Foxi experience.'
+}
+// - Page Header
+const header = {
+	title: 'Opišite nam kakvu stranicu biste htjeli imati.',
+	text: 'Koja je tema stranice (sport, portfolio, prodaja ručnih radova, najam bicikla, udruga...). Koji je cilj stranice (privuči klijente, prodati proizvod, ponuditi uslugu, samopromocija...)'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<FormHero
+		title={header.title}
+		text={header.text}
+		id="contact"
+		classes="bg-neutral-50 dark:bg-neutral-950/80"
+	/>
+	<ContactCards classes="dark:bg-neutral-950/80" />
+	<CTA />
+</Layout>

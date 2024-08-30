@@ -1,0 +1,79 @@
+[
+	{
+		"header": {
+			"title": "Razina 1",
+			"subtitle": "Maksimalna jednostavnost.",
+			"currency": "€",
+			"price": "199",
+			"priceLabel": "",
+			"priceMontly": "25",
+			"priceLabelMontly": "month",
+			"buttonName": "Naruči",
+			"buttonLink": "/kontakt"
+		},
+		"body": {
+			"listItems": [
+				{ "listItem": "Jednostavan dizajn" },
+				{ "listItem": "Osnovni SEO, domena, hosting." },
+				{ "listItem": "Kontakt forma, google karta." }
+			]
+		},
+		"footer": {
+			"buttonName": "Primjer stranice",
+			"buttonLink": "https://www.parking-airportzagreb.com/"
+		},
+		"type": "basic"
+	},
+	{
+		"header": {
+			"title": "Razina 2",
+			"subtitle": "Dobar omjer cijene i dobivenog.",
+			"currency": "€",
+			"price": "349",
+			"priceLabel": "month, billed anually",
+			"priceMontly": "35",
+			"priceLabelMontly": "month",
+			"buttonName": "Naruči",
+			"buttonLink": "/"
+		},
+		"body": {
+			"listItems": [
+				{ "listItem": "Složeniji dizajn." },
+				{ "listItem": "Više podstranica." },
+				{ "listItem": "Više slika i detalja." },
+				{ "listItem": "Više funkcionalnosti." }
+			]
+		},
+		"footer": {
+			"buttonName": "Primjer stranice",
+			"buttonLink": "https://www.bonani-caketoppers.com/"
+		},
+		"type": "basic"
+	},
+	{
+		"header": {
+			"title": "Razina 3",
+			"subtitle": "Maksimalna prezentacija i profesionalnost.",
+			"currency": "€",
+			"price": "499",
+			"priceLabel": "month, billed anually",
+			"priceMontly": "65",
+			"priceLabelMontly": "month",
+			"buttonName": "Naruči",
+			"buttonLink": "/"
+		},
+		"body": {
+			"listItems": [
+				{ "listItem": "Koncept napravljen da stranica može rasti i nadograđivati se." },
+				{
+					"listItem": "Namjenjeno za one kojima je web stranica vrlo važna komponenta poslovanja."
+				}
+			]
+		},
+		"footer": {
+			"buttonName": "Ova stranica je primjer",
+			"buttonLink": "/cjenik"
+		},
+		"type": "basic"
+	}
+]

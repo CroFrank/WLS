@@ -1,0 +1,31 @@
+---
+// Components
+// - Layout
+import Layout from '../../layouts/Layout.astro'
+// - UI
+import Hero from '../../components/blocks/hero/PageHeader.astro'
+import BlogPosts from '../../components/blocks/blog/BlogPosts.astro'
+
+// Data
+import { getCollection } from 'astro:content'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'WLS | Blog o web tehnologijama',
+	description:
+		'Pratite naš blog za najnovije vijesti i članke o web tehnologijama, trendovima u dizajnu, razvoju web stranica, i digitalnom marketingu. Budite u tijeku s najnovijim tehnološkim inovacijama!!'
+}
+// - Page Header
+const header = {
+	title: '<strong>Web-Life Support</strong> Blog. Savjeti, Inovacije & IT teme',
+	text: 'Ostanite informirani, ostanite produktivni. Sve najnovije iz svijeta Web Life Supporta.'
+}
+
+const allPosts = await getCollection('blog')
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<BlogPosts data={allPosts} />
+</Layout>

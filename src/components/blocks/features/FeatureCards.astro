@@ -1,0 +1,54 @@
+---
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import Card from '../../ui/cards/FeatureCard.astro'
+
+// Content
+// - Cards
+import feature01 from '../../../assets/cards/feature-01.webp'
+import feature02 from '../../../assets/cards/feature-02.webp'
+import feature03 from '../../../assets/cards/feature-03.webp'
+---
+
+<Section id="features">
+	<Row>
+		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
+			<h2 class="text-pretty">
+				Zašto izabrati <strong> Web Life Support</strong>
+			</h2>
+			<p class="pb-0 text-lg">
+				Mi smo mali tim entuzijasta koji se trudi pružiti vrhunsku uslugu i omogučiti i drugim malim
+				poduzetnicima i pojedincima da otvore svoje ideje cijelom svijetu.
+			</p>
+		</Col>
+	</Row>
+	<Row>
+		<Col span="4">
+			<Card
+				title="Nove tehnologije"
+				subtitle="Koristimo najnovije tehnologije što će osigurati Vašoj web stranici moderan izgled u korak sa vremenom i pružiti vrhunske performanse."
+				image={feature01}
+				link="/blog/nove-web-tehnologije"
+			/>
+		</Col>
+		<Col span="4" classes="flex flex-col gap-6">
+			<Card
+				title="Fleksibilnost "
+				subtitle="Ravnamo se prema Vama, za svaki buđet postoji usluga, ovisno o Vašim potrebama, započnite sa malim projektom koji kasnije može rasti zajedno sa Vama."
+				image={feature02}
+				link="/blog/fleksibilna-izrada-web-stranica"
+			/>
+		</Col>
+		<Col span="4" classes="flex flex-col gap-6">
+			<Card
+				title="Dostupnost"
+				subtitle="Mi smo mali tim i svaki klijent nam je od velike važnosti. Nema dugih čekanja za male izmjene ili popravke."
+				image={feature03}
+				link="/blog/fleksibilna-izrada-web-stranica"
+			/>
+		</Col>
+	</Row>
+</Section>

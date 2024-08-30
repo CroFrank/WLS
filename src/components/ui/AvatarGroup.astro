@@ -1,0 +1,33 @@
+---
+// Avatar
+// ------------
+
+// Reference: https://wind-ui.com/components/avatars/
+
+// Components
+// - UI
+import Avatar from './Avatar.astro'
+
+// Props
+type Props = {
+	size?: 'lg' | 'base' | 'sm' | 'xs'
+	techs: Array<any>
+	radius?: string
+	classes?: string
+}
+const { size = 'base', techs, radius = 'rounded', classes } = Astro.props
+---
+
+<span class:list={['avatar-group', { [`${classes}`]: classes }]}>
+	{
+		techs.map((item) => (
+			<Avatar size={size} image={item.image} radius={radius} classes="-mx-2 first:ml-0" />
+		))
+	}
+</span>
+
+<style>
+	.avatar-group {
+		@apply flex -space-x-2;
+	}
+</style>

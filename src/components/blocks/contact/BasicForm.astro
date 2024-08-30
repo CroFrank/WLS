@@ -1,0 +1,62 @@
+---
+// Basic Contact Form
+// ------------
+// Description: A basic contact form with fields for first name, last name, email, phone number and message.
+// Properties:
+// - classes: Additional classes to be added to the block
+// ------------
+
+// Components
+// - UI
+import Card from '../../ui/cards/partials/Card.astro'
+import CardBody from '../../ui/cards/partials/CardBody.astro'
+import Form from '../../ui/forms/Form.astro'
+import FormField from '../../ui/forms/partials/FormField.astro'
+import InputField from '../../ui/forms/form-elements/InputField.astro'
+import TextArea from '../../ui/forms/form-elements/TextArea.astro'
+import Button from '../../ui/Button.astro'
+import Checkbox from '../../ui/forms/form-elements/Checkbox.astro'
+
+// Props
+type Props = {
+	classes?: string
+}
+const { classes } = Astro.props
+---
+
+<Card classes={classes}>
+	<CardBody>
+		<Form>
+			<h2 class="text-2xl">Kontakt forma</h2>
+			<FormField>
+				<InputField type="text" id="firstName" label="Ime" />
+				<InputField type="text" id="lastName" label="Prezime" />
+			</FormField>
+			<FormField>
+				<InputField type="email" id="email" label="Vaš Email" required value="name@youremail.com" />
+			</FormField>
+			<FormField>
+				<InputField type="tel" id="phone" label="Broj telefona" />
+			</FormField>
+			<FormField
+				><TextArea
+					id="message"
+					label="Opišite Vašu buduću web stranicu"
+					classes="pt-1"
+				/></FormField
+			>
+			<FormField>
+				<InputField type="text" id="budzet" label="Okvirni budžet npr. 200€" />
+			</FormField>
+			<FormField>
+				<Checkbox
+					id="checkbox"
+					label="'Zaštita privatnosti"
+					helperText="Razumijem da će se osobni podaci koristiti isključivo za kontakt i da se neće koristiti u druge svrhe kako je definirano u polici privatnosti."
+				/>
+			</FormField>
+
+			<Button style="primary" type="submit" classes="mt-3">Pošalji</Button>
+		</Form>
+	</CardBody>
+</Card>

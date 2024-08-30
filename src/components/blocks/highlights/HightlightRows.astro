@@ -1,0 +1,70 @@
+---
+// - UI
+import TextImage from '../basic/TextImage.astro'
+
+// Content
+import highlight01 from '../../../assets/highlights/domain-image.jpg'
+import highlight02 from '../../../assets/highlights/web-designe-img.jpg'
+import highlight03 from '../../../assets/highlights/seo-img.jpg'
+import highlight04 from '../../../assets/highlights/hosting-img.jpg'
+
+type HighlightBlock = {
+	title: string
+	text: string
+	image: any
+	mobileImage?: any
+	imageWidth: number
+	imageHeight: number
+	imagePosition: 'left' | 'right'
+}
+const highlightBlocks: HighlightBlock[] = [
+	{
+		title: 'Izbor <strong>domene</strong>',
+		text: 'Ovo je Naš prvi korak, biramo naziv domene za Vašu web stranicu. Domena je jedinstveni naziv na internetu koji služi kao adresa ili lokacija Vaše stranice na webu. Na primjer: weblifesupport.com',
+		image: highlight01,
+		imageWidth: highlight01.width,
+		imageHeight: highlight01.height,
+		imagePosition: 'right'
+	},
+	{
+		title: 'Izgled stranice, <strong>Web design</strong> ',
+		text: 'Ovisno o sadržaju i temi Vaše stranice slažemo dizajn koji će najviše odgovarati Vašoj publici. Osim estetske komponente pazimo i na funkcionalnost. Svaka stranica koju dizajniramo je prilagođena za sve uređaje, od desktop računala do mobitela, kako bi vaša poruka bila dostupna svima, uvijek i svugdje.',
+		image: highlight02,
+		imageWidth: highlight02.width,
+		imageHeight: highlight02.height,
+		imagePosition: 'left'
+	},
+	{
+		title: 'Rangiranje na tražilicama, <strong>SEO</strong>',
+		text: 'Proces optimizacije web stranice s ciljem poboljšanja njenog rangiranja na tražilicama poput Googlea. Kroz SEO, vaša stranica postaje vidljivija u rezultatima pretraživanja za relevantne ključne riječi, što povećava organski promet, odnosno broj posjetitelja koji dolaze na vašu stranicu bez plaćenih oglasa. ',
+		image: highlight03,
+		imageWidth: highlight03.width,
+		imageHeight: highlight03.height,
+		imagePosition: 'right'
+	},
+	{
+		title: 'Mjesto pohrane Vaše web stranice, <strong>Hosting</strong>',
+		text: 'Nakon što smo sve napravili, vrijeme je da Vašu stranicu pohranimo na server koji će omogučiti korisnicima dostupnost Vaše stranice diljem svijeta 0-24 svaki dan.',
+		image: highlight04,
+		imageWidth: highlight04.width,
+		imageHeight: highlight04.height,
+		imagePosition: 'left'
+	}
+]
+---
+
+{
+	highlightBlocks.map((highlight, key) => (
+		<TextImage
+			id={`highlight-${key}`}
+			title={highlight.title}
+			text={highlight.text}
+			image={highlight.image}
+			imageWidth={highlight.imageWidth}
+			imageHeight={highlight.imageHeight}
+			mobileImage={highlight.mobileImage}
+			imagePosition={highlight.imagePosition}
+			classes={key === 0 ? '!pb-10' : '!pb-10 !pt-0'}
+		/>
+	))
+}
