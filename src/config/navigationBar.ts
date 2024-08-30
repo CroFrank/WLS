@@ -10,7 +10,7 @@ export interface NavSubItem {
 
 export interface NavItem {
 	name: string
-	link?: string
+	link: string
 	submenu?: NavSubItem[]
 }
 
@@ -41,7 +41,8 @@ export const navigationBarData: NavData = {
 			submenu: [
 				{ name: 'FAQ', link: '/faq' },
 				{ name: 'Opći uvjeti', link: '/terms' }
-			]
+			],
+			link: '#'
 		},
 		{ name: 'Kontakt', link: '/kontakt' }
 	],
