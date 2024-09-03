@@ -3,7 +3,7 @@ title: 'SSL zaštita za web stranice'
 pubDate: 2024-08-25T05:00:00Z
 description: 'Što je SSL zaštita? Trebam li ja SSL zaštitu na svojoj web stranici? Što je bolje TLS ili SSL? Više o SSL-u na našem blogu.'
 author: 'Fran Branković'
-image: '/blog/ssl.jpg'
+image: '/blog/ssl.webp'
 tags: ['sigurnost', 'web stranica']
 ---
 

@@ -8,6 +8,7 @@ import { Icon } from 'astro-icon/components'
 // Data
 import { socialLinks } from '../../config/socialLinks'
 import { footerNavigationData } from '../../config/footerNavigation'
+import Button from './Button.astro'
 
 const { footerAbout, footerColumns, subFooter } = footerNavigationData
 ---
@@ -33,7 +34,13 @@ const { footerAbout, footerColumns, subFooter } = footerNavigationData
 							<ul>
 								{column.subCategories.map((subCategory) => (
 									<li>
-										<a href={subCategory.subCategoryLink}> {subCategory.subCategory} </a>
+										{subCategory.subCategoryModal ? (
+											<a data-modal={subCategory.subCategoryModal} class="hover:cursor-pointer">
+												{subCategory.subCategory}
+											</a>
+										) : (
+											<a href={subCategory.subCategoryLink}> {subCategory.subCategory} </a>
+										)}
 									</li>
 								))}
 							</ul>

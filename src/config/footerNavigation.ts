@@ -15,7 +15,8 @@ export interface FooterAbout {
 
 export interface SubCategory {
 	subCategory: string
-	subCategoryLink: string
+	subCategoryLink?: string
+	subCategoryModal?: string
 }
 
 export interface FooterColumn {
@@ -53,11 +54,11 @@ export const footerNavigationData: FooterData = {
 				},
 				{
 					subCategory: 'Politika privatnosti',
-					subCategoryLink: '/'
+					subCategoryLink: '/politika-privatnosti'
 				},
 				{
 					subCategory: 'Impressum',
-					subCategoryLink: '/'
+					subCategoryModal: 'impressum'
 				}
 			]
 		},
@@ -88,11 +89,11 @@ export const footerNavigationData: FooterData = {
 				},
 				{
 					subCategory: 'Mobitel',
-					subCategoryLink: '/'
+					subCategoryModal: 'mob'
 				},
 				{
 					subCategory: 'Whatsapp',
-					subCategoryLink: '/'
+					subCategoryModal: 'whatsapp'
 				}
 			]
 		}
