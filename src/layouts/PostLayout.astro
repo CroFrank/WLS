@@ -11,7 +11,7 @@ import BlogPostHero from '../components/blocks/blog/BlogPostHero.astro'
 // Content
 // - SEO
 const SEO = {
-	title: `${frontmatter.title} | Foxi`,
+	title: `${frontmatter.title} | WLS`,
 	description: `${frontmatter.description}`
 }
 ---
@@ -21,7 +21,7 @@ const SEO = {
 		tags={frontmatter.tags}
 		title={frontmatter.title}
 		author={frontmatter.author}
-		publishDate={frontmatter.pubDate.toLocaleDateString('en-US', {
+		publishDate={frontmatter.pubDate.toLocaleDateString('hr-EU', {
 			year: 'numeric',
 			month: 'long',
 			day: 'numeric'

@@ -7,7 +7,7 @@ image: '/blog/feature-01.webp'
 tags: ['web tehnologije', 'web stranica', astro.js]
 ---
 
-![Web life support.](/blog/feature-01.webp)
+![Web life support.](/blog/logo.webp)
 
 ### Web tehnologije
 

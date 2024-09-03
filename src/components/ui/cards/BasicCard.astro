@@ -30,8 +30,21 @@ type Props = {
 	link?: string
 	type?: 'image-top' | 'image-bottom'
 	classes?: string
+	tel?: string
+	email?: string
 }
-const { title = '', subtitle, titleSize = 'lg', image, icon, link, type, classes } = Astro.props
+const {
+	title = '',
+	subtitle,
+	titleSize = 'lg',
+	image,
+	icon,
+	link,
+	type,
+	classes,
+	tel,
+	email
+} = Astro.props
 ---
 
 <Card classes={classes} link={link}>
@@ -60,6 +73,14 @@ const { title = '', subtitle, titleSize = 'lg', image, icon, link, type, classes
 			)
 		}
 		{subtitle && <p>{subtitle}</p>}
+		{
+			tel && (
+				<a class="block pb-5" href={`tel:${tel}`}>
+					{tel}
+				</a>
+			)
+		}
+		{email && <a href={`mailto:${email}`}>{email}</a>}
 		<slot />
 	</CardBody>
 </Card>

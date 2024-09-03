@@ -7,7 +7,7 @@ image: '/blog/ssl.jpg'
 tags: ['sigurnost', 'web stranica']
 ---
 
-![Web life support.](/blog/post-06.png)
+![Web life support.](/blog/ssl.webp)
 
 ### Što je SSL zaštita
 

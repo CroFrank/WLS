@@ -1,20 +1,20 @@
 [
 	{
 		"header": {
-			"title": "Razina 1",
-			"subtitle": "Maksimalna jednostavnost.",
+			"title": "Jednostavnost",
+			"subtitle": "",
 			"currency": "€",
 			"price": "199",
-			"priceLabel": "",
-			"priceMontly": "25",
-			"priceLabelMontly": "month",
+			"priceLabel": "jednokratno",
+			"priceMontly": "50",
+			"priceLabelMontly": "godišnje",
 			"buttonName": "Naruči",
 			"buttonLink": "/kontakt"
 		},
 		"body": {
 			"listItems": [
 				{ "listItem": "Jednostavan dizajn" },
-				{ "listItem": "Osnovni SEO, domena, hosting." },
+				{ "listItem": "Osnovni SEO, SSL zaštita" },
 				{ "listItem": "Kontakt forma, google karta." }
 			]
 		},
@@ -26,15 +26,15 @@
 	},
 	{
 		"header": {
-			"title": "Razina 2",
-			"subtitle": "Dobar omjer cijene i dobivenog.",
+			"title": "Hobi",
+			"subtitle": "",
 			"currency": "€",
 			"price": "349",
-			"priceLabel": "month, billed anually",
-			"priceMontly": "35",
-			"priceLabelMontly": "month",
+			"priceLabel": "jednokratno",
+			"priceMontly": "70",
+			"priceLabelMontly": "godišnje",
 			"buttonName": "Naruči",
-			"buttonLink": "/"
+			"buttonLink": "/kontakt"
 		},
 		"body": {
 			"listItems": [
@@ -52,19 +52,19 @@
 	},
 	{
 		"header": {
-			"title": "Razina 3",
-			"subtitle": "Maksimalna prezentacija i profesionalnost.",
+			"title": "Profesionalnost",
+			"subtitle": "",
 			"currency": "€",
-			"price": "499",
-			"priceLabel": "month, billed anually",
-			"priceMontly": "65",
-			"priceLabelMontly": "month",
+			"price": "999",
+			"priceLabel": "jednokratno",
+			"priceMontly": "90",
+			"priceLabelMontly": "godišnje",
 			"buttonName": "Naruči",
-			"buttonLink": "/"
+			"buttonLink": "/kontakt"
 		},
 		"body": {
 			"listItems": [
-				{ "listItem": "Koncept napravljen da stranica može rasti i nadograđivati se." },
+				{ "listItem": "Velika fleksibilnost u dizajnu i funkcionalnostima." },
 				{
 					"listItem": "Namjenjeno za one kojima je web stranica vrlo važna komponenta poslovanja."
 				}

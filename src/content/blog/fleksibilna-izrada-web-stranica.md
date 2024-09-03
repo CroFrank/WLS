@@ -7,7 +7,7 @@ image: '/blog/feature-02.webp'
 tags: ['Web Life Support']
 ---
 
-![Web life support.](/blog/logo.svg)
+![Web life support.](/blog/logo.webp)
 
 ### Web Life Support
 
