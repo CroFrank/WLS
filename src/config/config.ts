@@ -24,10 +24,10 @@ export const configData: Config = {
 	siteTitle: 'Web Life Support',
 	siteDescription:
 		'Izrada brzih i modernih web stranica za male poduzetnike i startupove. Predstavite svoje ideje svijetu uz pomoć najnovijih tehnologija. Kontaktirajte nas danas!',
-	ogImage: '/og.jpg',
+	ogImage: '/logo.svg',
 	logo: {
 		src: '/logo.svg',
-		alt: 'Foxi. logo'
+		alt: 'Web Life Support logo'
 	},
 	canonical: true,
 	noindex: false,
