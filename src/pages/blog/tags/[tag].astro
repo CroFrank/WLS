@@ -24,6 +24,7 @@ export async function getStaticPaths() {
 		}
 	})
 }
+export const prerender = true
 const { tag } = Astro.params
 const { posts } = Astro.props
 
