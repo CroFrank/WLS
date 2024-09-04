@@ -21,6 +21,7 @@ import Checkbox from '../../ui/forms/form-elements/Checkbox.astro'
 type Props = {
 	classes?: string
 }
+
 const { classes } = Astro.props
 ---
 
@@ -28,12 +29,19 @@ const { classes } = Astro.props
 	<CardBody>
 		<Form>
 			<h2 class="text-2xl">Kontakt forma</h2>
+			<input type="hidden" name="_feedback.whitelabel" value="true" />
+			<input
+				type="hidden"
+				name="_feedback.success.title"
+				value="Primili smo Vašu poruku, javljamo se brzo, hvala!"
+			/>
+			<input type="hidden" name="_feedback.success.message" value="Povratak:" />
 			<FormField>
 				<InputField type="text" id="firstName" label="Ime" />
 				<InputField type="text" id="lastName" label="Prezime" />
 			</FormField>
 			<FormField>
-				<InputField type="email" id="email" label="Vaš Email" required value="name@youremail.com" />
+				<InputField type="email" id="email" label="name@youremail.com" required />
 			</FormField>
 			<FormField>
 				<InputField type="tel" id="phone" label="Broj telefona" />
@@ -55,7 +63,7 @@ const { classes } = Astro.props
 					helperText="Razumijem da će se osobni podaci koristiti isključivo za kontakt i da se neće koristiti u druge svrhe kako je definirano u polici privatnosti."
 				/>
 			</FormField>
-
+			<div class="g-recaptcha" data-sitekey="6LfyhDYqAAAAAOqX7RHYW9YA5kryWu-H4FHYeCt_"></div>
 			<Button style="primary" type="submit" classes="mt-3">Pošalji</Button>
 		</Form>
 	</CardBody>
