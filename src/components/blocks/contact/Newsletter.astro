@@ -46,7 +46,7 @@ import Row from '../../ui/Row.astro'
 									class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 pl-10 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 sm:rounded-none sm:rounded-l-lg dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
 									placeholder="Unesite Vaš email"
 									type="email"
-									id="email"
+									id="newsletter-input"
 									required
 								/>
 							</div>
@@ -77,56 +77,32 @@ import Row from '../../ui/Row.astro'
 </Row>
 
 <script>
-	// Form submission handler
-
 	document.querySelector('#newsletter-form')!.addEventListener('submit', async (e) => {
 		e.preventDefault()
+		const newsletterInput = document.querySelector('#newsletter-input') as HTMLInputElement | null
 
-		console.log('Form submitted')
-		const emailInput = document.querySelector('#email') as HTMLInputElement | null
-
-		if (emailInput) {
-			const email = emailInput.value
-			console.log(email)
-		} else {
-			console.error('Email input element not found')
+		if (!newsletterInput) {
+			alert('Unesite ispravan email')
+			return
 		}
+		const value = newsletterInput.value
+		try {
+			const res = await fetch('/api/mailer-lite.json', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(value)
+			})
+			if (!res.ok) {
+				throw new Error(`Server error: ${res.status} ${res.statusText}`)
+			}
 
-		const API_KEY =
-			'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiZjA2N2FkYWEzNTRiNzM5NTAxODdhMjAwMmExMWYzOTc4ZDliNGVmYzJlMzdlZmNhMWU3ZjNjMjJjNmY4YjUwNTJhOGI0ZDQ3YzY2N2JhMTYiLCJpYXQiOjE3MjU4OTQyNDUuMzk1OTc3LCJuYmYiOjE3MjU4OTQyNDUuMzk1OTgsImV4cCI6NDg4MTU2Nzg0NS4zOTI4MzEsInN1YiI6IjExMDUzNjAiLCJzY29wZXMiOltdfQ.nChQppulMRD07wQuRRj1SFo0-KAXT5GebDvQ06tCG-IjgjOpCZ0-2OIbr6Nr-SSrbq_6IeJrys1Gj8OIq2LbtELp9xIDHMTMohxefzcOJKOrLQnGndnjcngssk9J2T5G9wKmc8OJKvIoDHbuPuapbKiiq5t7JqWcKVhyO9CYRcpT_Jt5jrjGl8frv6tt3HuwfcbIKD1qj5Mjev3idP07U97g1mCvGYvFQKeIOQktWYQnYZHtTMSTgGrSFohQCzzr78k6evW_LKm0K8EMyfzSvXNZzC-jKD4ARueqCWQKBBBwRxSzOlKTlRrVAcqGtrdAqEtsv1XzT5Oamlm_9pDmYC5Mme_wRZTtvulighMThRHVh3vbp15oDa7DnZ25liJ3GrsBCNPz2_eX0BhozRCBob1IpsDWIVQp5sAIYB1A6Ngb_cMmuMdBtYw4iIqQYWDxTKR1uwIwvkjsAbm-fvapTxASleUSL1Dcx0DPmnRLNLisQuVQmiUwj0EydGSGsKOUqjiNSHmmhRRHVAWCFYQ-fv5NXZ_0bjqSU07qNTHkBE0Lv1dE5Ab479Cm_ruKd-cFgz-Nx7RGcXxkEvc-mGDAiGfMlnWG_-UYIsWmktgpuQ5tFK8UzDyT_wwRzD7xYCZ7yOt0cAKVKKUqbcti0dPDLq1F2qyePmZMXtS_j3-GQ04' // Set this to your actual MailerLite API key
-		const GROUP_ID = '132009258345564100'
-		const headers = {
-			'Content-Type': 'application/json',
-			Accept: 'application/json',
-			Authorization: `Bearer ${API_KEY}`
+			const { message } = await res.json()
+
+			window.location.href = `/newsletter?email=${encodeURIComponent(message)}`
+		} catch (error) {
+			console.error('Error:', error)
 		}
-
-		// Check if email is valid
-		// if (!email) {
-		// 	alert('Unesite ispravan email')
-		// 	return
-		// }
-
-		// try {
-		// 	// Call MailerLite API to add the subscriber
-		// 	const response = await fetch(
-		// 		`https://api.mailerlite.com/api/v2/groups/${GROUP_ID}/subscribers`,
-		// 		{
-		// 			method: 'POST',
-		// 			headers: headers,
-		// 			body: JSON.stringify({ email: email }) // Send the email as the body of the request
-		// 		}
-		// 	)
-
-		// 	// Check if the request was successful
-		// 	if (response.ok) {
-		// 		alert('Hvala na prijavi! Uskoro ćete primiti naše obavijesti.')
-		// 	} else {
-		// 		alert('Dogodila se greška. Pokušajte ponovo.')
-		// 	}
-		// } catch (error) {
-		// 	console.error('Error:', error)
-		// 	alert('Dogodila se greška. Pokušajte ponovo.')
-		// }
 	})
 </script>

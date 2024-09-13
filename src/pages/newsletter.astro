@@ -1,0 +1,27 @@
+---
+import Row from '../components/ui/Row.astro'
+import Section from '../components/ui/Section.astro'
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout>
+	<Section>
+		<Row flex>
+			<h1>Dobrodošli na naš newsletter</h1>
+
+			<br />
+		</Row>
+		<Row flex>
+			<p>We have successfully subscribed: <span id="span" class="text-primary-700"></span></p>
+		</Row>
+		<Row flex>
+			<p>Povratak na <a href="/">naslovnicu</a></p>
+		</Row>
+	</Section>
+</Layout>
+
+<script>
+	const url = new URL(window.location.href)
+	const email = url.searchParams.get('email')
+	document.querySelector('#span')!.textContent = email
+</script>
