@@ -20,7 +20,7 @@
 		},
 		"footer": {
 			"buttonName": "Primjer stranice",
-			"buttonLink": "https://www.parking-airportzagreb.com/"
+			"buttonLink": "https://www.bonani.hr/"
 		},
 		"type": "basic"
 	},
@@ -29,7 +29,7 @@
 			"title": "Hobi",
 			"subtitle": "",
 			"currency": "€",
-			"price": "349",
+			"price": "299",
 			"priceLabel": "jednokratno",
 			"priceMontly": "70",
 			"priceLabelMontly": "godišnje",
@@ -46,7 +46,7 @@
 		},
 		"footer": {
 			"buttonName": "Primjer stranice",
-			"buttonLink": "https://www.bonani-caketoppers.com/"
+			"buttonLink": "https://www.uzimam.com/"
 		},
 		"type": "basic"
 	},
@@ -55,7 +55,7 @@
 			"title": "Profesionalnost",
 			"subtitle": "",
 			"currency": "€",
-			"price": "999",
+			"price": "399+",
 			"priceLabel": "jednokratno",
 			"priceMontly": "90",
 			"priceLabelMontly": "godišnje",
