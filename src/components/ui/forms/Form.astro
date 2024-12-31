@@ -4,12 +4,13 @@ type Props = {
 	classes?: string
 }
 const { method = 'post', classes } = Astro.props
+const privateKey = import.meta.env.PUBLIC_FORMSPARK
 ---
 
 <form
 	method={method}
 	class:list={[{ [`${classes}`]: classes }]}
-	action="https://submit-form.com/xqgQl8o6y"
+	action=`https://submit-form.com/${privateKey}`
 >
 	<slot />
 </form>
