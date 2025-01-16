@@ -1,0 +1,115 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Section from '../components/ui/Section.astro'
+import CheckboxUpitnik from '../components/ui/CheckboxUpitnik.astro'
+import InputField from '../components/ui/forms/form-elements/InputField.astro'
+import TextArea from '../components/ui/forms/form-elements/TextArea.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import Button from '../components/ui/Button.astro'
+import Form from '../components/ui/forms/Form.astro'
+
+const SEO = {
+	title: 'WLS | Upitnik',
+	description: 'Upitnik'
+}
+// - Page Header
+const header = {
+	title: 'Upitnik',
+	text: 'Važno je da proizvod/usluga bude cjelovita od samo početka, međutim treba uzeti u obzir da svaka funkcionalnost zahtijeva dodatne troškove i vrijeme razvoja. Prema potrebi program se može nadograđivati.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<Section>
+		<h5>Upitnik je informativnog karaktera i sve možemo naknadno mijenjati.</h5>
+		<Form>
+			<input type="hidden" name="_feedback.whitelabel" value="true" />
+			<input
+				type="hidden"
+				name="_feedback.success.title"
+				value="Primili smo Vašu poruku, javljamo se brzo, hvala!"
+			/>
+			<input type="hidden" name="_feedback.success.message" value="Povratak:" />
+			<InputField id="email" label="Vaš email" classes="mb-10 max-w-80" type="email" required />
+
+			<h4>Koje funkcionalnosti bi imao program u početku:</h4>
+
+			<fieldset class="mb-20 max-w-screen-sm">
+				<legend class="sr-only"></legend>
+
+				<CheckboxUpitnik text="Mobilna verzija programa" id="mob" />
+				<CheckboxUpitnik text="Izrada ponuda, rezervacija..." id="ponuda" />
+				<CheckboxUpitnik text="Kompletno računovodstvo" id="računovodstvo" />
+				<CheckboxUpitnik text="Newsletter - email promocije" id="newsletter" />
+				<CheckboxUpitnik text="Izrada web stranica" id="web-izrada" />
+				<CheckboxUpitnik text="Baza podataka sa informacijama o klijentima" id="kontakti" />
+				<CheckboxUpitnik text="Opcija demo verzije programa za potencijalne korisnike" id="demo" />
+				<CheckboxUpitnik text="Prikaz lokacija nekretnina na Google karti" id="karta" />
+				<CheckboxUpitnik text="Blog sekcija za objave" id="blog" />
+				<CheckboxUpitnik
+					text="Kreiranje objave na jednom mjestu, automatska objava na raznim platformama"
+					id="auto-objave"
+				/>
+
+				<label class="mb-5 mt-5 inline-flex cursor-pointer items-center">
+					<input id="languages" type="checkbox" value="" class="peer sr-only" name="languages" />
+					<div
+						class="peer relative h-6 w-11 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-blue-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rtl:peer-checked:after:-translate-x-full dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-blue-800"
+					>
+					</div>
+					<span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+						>Višejezičnost</span
+					>
+				</label>
+
+				<InputField id="jezik" label="Na kojim sve jezicima" classes="mb-10" />
+
+				<InputField
+					id="obujam"
+					label="Obujam poslovanja: Hrvatska, regija, svijet..."
+					classes="mb-5"
+				/>
+				<TextArea
+					id="funcionalnosti"
+					label="Koje biste još funkcionalnosti željeli?"
+					classes="mb-5"
+				/>
+				<label for="countries" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+					>Kada očekujete da je projekt gotov:</label
+				>
+				<select
+					required
+					name="rok-izrade"
+					id="countries"
+					class="mb-5 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+				>
+					<option>Izaberi</option>
+					<option>3 - 6 mjeseci</option>
+					<option>6 - 9 mjeseci</option>
+					<option>6 - 12 mjeseci</option>
+				</select>
+				<InputField
+					required
+					id="budzet"
+					label="Okvirni budžet"
+					classes="mb-5"
+					helperText="Razumijevanje vašeg budžeta ključno je kako bismo mogli ponuditi optimalno rješenje koje odgovara vašim potrebama i resursima. Time možemo prioritetno razviti najvažnije funkcionalnosti, predložiti odgovarajuće tehnologije i uštedjeti vrijeme izbjegavanjem opcija izvan realnog dosega."
+				/>
+			</fieldset>
+			<Button type="submit">Pošalji</Button>
+		</Form>
+	</Section>
+</Layout>
+<script>
+	const languagesCheckbox = document.getElementById('languages')!
+	const jezikInput = document.getElementById('jezik')! as HTMLInputElement
+
+	// Load state from localStorage
+	let isClicked = true
+	jezikInput.disabled = isClicked
+	languagesCheckbox.addEventListener('click', () => {
+		isClicked = !isClicked
+		jezikInput.disabled = isClicked
+	})
+</script>
