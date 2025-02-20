@@ -1,21 +1,22 @@
 [
 	{
 		"header": {
-			"title": "Jednostavnost",
+			"title": "StartWeb",
 			"subtitle": "",
 			"currency": "€",
-			"price": "199",
+			"price": "299",
 			"priceLabel": "jednokratno",
-			"priceMontly": "50",
+			"priceMontly": "60",
 			"priceLabelMontly": "godišnje",
 			"buttonName": "Naruči",
 			"buttonLink": "/kontakt"
 		},
 		"body": {
 			"listItems": [
-				{ "listItem": "Jednostavan dizajn" },
+				{ "listItem": "Dizajn stranice" },
 				{ "listItem": "Osnovni SEO, SSL zaštita" },
-				{ "listItem": "Kontakt forma, google karta." }
+				{ "listItem": "Kontakt forma, google karta..." },
+				{ "listItem": "Email račun" }
 			]
 		},
 		"footer": {
@@ -26,53 +27,59 @@
 	},
 	{
 		"header": {
-			"title": "Hobi",
+			"title": "ProWeb",
 			"subtitle": "",
 			"currency": "€",
-			"price": "299",
+			"price": "449",
 			"priceLabel": "jednokratno",
-			"priceMontly": "70",
+			"priceMontly": "80",
 			"priceLabelMontly": "godišnje",
 			"buttonName": "Naruči",
 			"buttonLink": "/kontakt"
 		},
 		"body": {
 			"listItems": [
-				{ "listItem": "Složeniji dizajn." },
-				{ "listItem": "Više podstranica." },
-				{ "listItem": "Više slika i detalja." },
-				{ "listItem": "Više funkcionalnosti." }
-			]
-		},
-		"footer": {
-			"buttonName": "Primjer stranice",
-			"buttonLink": "https://www.uzimam.com/"
-		},
-		"type": "basic"
-	},
-	{
-		"header": {
-			"title": "Profesionalnost",
-			"subtitle": "",
-			"currency": "€",
-			"price": "399+",
-			"priceLabel": "jednokratno",
-			"priceMontly": "90",
-			"priceLabelMontly": "godišnje",
-			"buttonName": "Naruči",
-			"buttonLink": "/kontakt"
-		},
-		"body": {
-			"listItems": [
-				{ "listItem": "Velika fleksibilnost u dizajnu i funkcionalnostima." },
-				{
-					"listItem": "Namjenjeno za one kojima je web stranica vrlo važna komponenta poslovanja."
-				}
+				{ "listItem": "Sve kao StartWeb paket +" },
+				{ "listItem": "Više podstranica" },
+				{ "listItem": "Više slika i detalja" },
+				{ "listItem": "Više funkcionalnosti" }
 			]
 		},
 		"footer": {
 			"buttonName": "Ova stranica je primjer",
 			"buttonLink": "/cjenik"
+		},
+		"type": "basic"
+	},
+	{
+		"header": {
+			"title": "DynamicWeb",
+			"subtitle": "",
+			"currency": "€",
+			"price": "499+",
+			"priceLabel": "jednokratno",
+			"priceMontly": "120+",
+			"priceLabelMontly": "godišnje",
+			"buttonName": "Naruči",
+			"buttonLink": "/kontakt"
+		},
+		"body": {
+			"listItems": [
+				{ "listItem": "Povezivanje stranice sa bazom podataka" },
+				{
+					"listItem": "Mogućnost registracije korisnika"
+				},
+				{
+					"listItem": "Implementacija umjetne inteligencije"
+				},
+				{
+					"listItem": "Newsletter"
+				}
+			]
+		},
+		"footer": {
+			"buttonName": "Primjer stranice",
+			"buttonLink": "https://www.uzimam.com/"
 		},
 		"type": "basic"
 	}
