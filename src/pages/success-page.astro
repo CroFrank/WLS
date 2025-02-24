@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import Section from '../components/ui/Section.astro'
+
+const params = Astro.url.searchParams
+const email = params.get('email')
+
+const header = {
+	title: 'Uspješno smo zaprimili vašu poruku',
+	text: 'Javljamo se u najkraćem mogućem vremenu'
+}
+---
+
+<Layout>
+	<Hero title={header.title} text={header.text} />
+	<Section>
+		<p>Email adresa na koju će vam stići odgovor: <span class="text-green-600">{email}</span></p>
+		<p>Povratak na naslovnicu: <a href="/">naslovnica</a></p>
+	</Section>
+</Layout>

@@ -1,16 +1,11 @@
 ---
 type Props = {
-	method?: 'post' | 'get' | 'dialog'
+	method?: 'POST' | 'get' | 'dialog'
 	classes?: string
 }
 const { method = 'post', classes } = Astro.props
-const privateKey = import.meta.env.PUBLIC_FORMSPARK
 ---
 
-<form
-	method={method}
-	class:list={[{ [`${classes}`]: classes }]}
-	action=`https://submit-form.com/neff0Z7ZN`
->
+<form action="/api/email" method={method} class:list={[{ [`${classes}`]: classes }]}>
 	<slot />
 </form>

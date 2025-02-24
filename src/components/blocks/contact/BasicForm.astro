@@ -1,13 +1,6 @@
 ---
-// Basic Contact Form
-// ------------
 // Description: A basic contact form with fields for first name, last name, email, phone number and message.
-// Properties:
-// - classes: Additional classes to be added to the block
-// ------------
 
-// Components
-// - UI
 import Card from '../../ui/cards/partials/Card.astro'
 import CardBody from '../../ui/cards/partials/CardBody.astro'
 import Form from '../../ui/forms/Form.astro'
@@ -17,7 +10,6 @@ import TextArea from '../../ui/forms/form-elements/TextArea.astro'
 import Button from '../../ui/Button.astro'
 import Checkbox from '../../ui/forms/form-elements/Checkbox.astro'
 
-// Props
 type Props = {
 	classes?: string
 }
@@ -29,13 +21,8 @@ const { classes } = Astro.props
 	<CardBody>
 		<Form>
 			<h2 class="text-2xl">Kontakt forma</h2>
-			<input type="hidden" name="_feedback.whitelabel" value="true" />
-			<input
-				type="hidden"
-				name="_feedback.success.title"
-				value="Primili smo Vašu poruku, javljamo se brzo, hvala!"
-			/>
-			<input type="hidden" name="_feedback.success.message" value="Povratak:" />
+			<!-- <input type="hidden" name="timestamp" value={Date.now()} /> -->
+			<InputField type="text" id="lovac" label="nadimak" classes="hidden" />
 			<FormField>
 				<InputField type="text" id="firstName" label="Ime" />
 				<InputField type="text" id="lastName" label="Prezime" />
@@ -63,7 +50,6 @@ const { classes } = Astro.props
 					helperText="Razumijem da će se osobni podaci koristiti isključivo za kontakt i da se neće koristiti u druge svrhe kako je definirano u polici privatnosti."
 				/>
 			</FormField>
-
 			<Button style="primary" type="submit" classes="mt-3">Pošalji</Button>
 		</Form>
 	</CardBody>
