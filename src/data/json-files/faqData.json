@@ -1,7 +1,7 @@
 [
 	{
 		"question": "Koliko traje izrada web stranice?",
-		"reply": "Izrada može trajati 3 dana, a može i mjesec dana, ovisi o zahtjevnosti projekta. Stranica kao što je ova na kojoj ste sada weblifesupport.com je gotova za 2-3 tjedna.",
+		"reply": "Izrada stranice u StartWeb paketu traje oko 7 dana, ProWeb 7-30dana, DynamicWeb 14-90dana.",
 		"category": "pricing",
 		"open": true
 	},
@@ -18,20 +18,32 @@
 		"open": false
 	},
 	{
-		"question": "Kada plaćam uslugu izrade web stranice?",
-		"reply": "25% ukupnog iznosa se uplaćuje kao avans, a ostatak na kraju kada stranica bude gotova.",
+		"question": "Trebam li platiti cijeli iznos unaprijed?",
+		"reply": "Obično se radi avansno plaćanje (30-50%), a ostatak nakon završetka projekta.",
 		"category": "pricing",
 		"open": false
 	},
 	{
-		"question": "Kada plaćam uslugu održavanja?",
-		"reply": "Održavanje se plaća odjednom kada stranica bude gotova i svake iduće godine u isto vrijeme.",
+		"question": "Tko je vlasnik web stranice nakon izrade?",
+		"reply": "Nakon završetka projekta, vi ste vlasnik web stranice i domene.",
+		"category": "pricing",
+		"open": false
+	},
+	{
+		"question": "Mogu li sam mijenjati sadržaj na stranici?",
+		"reply": "Da, možete samostalno uređivati tekstove, slike, objave... Ova usluga najčešće košta 30€/mjesečno, a dodaje se u cijenu održavanja.",
+		"category": "pricing",
+		"open": false
+	},
+	{
+		"question": "Hoće li stranica biti brza?",
+		"reply": "Stranica će biti iznimno brza, koristimo Astro tehnologiju koja se smatra najbržom pogotovo za statičke stranice, puno brže od recimo stranica rađenih u wordpresu.",
 		"category": "pricing",
 		"open": false
 	},
 	{
 		"question": "Zašto plaćam održavanje?",
-		"reply": "Tu je uključena cijena domene i hostinga koji se moraju produžiti svake godine, tehničko održavanje stranice, savjeti i podrška, izmjena sadržaja (slike, tekstovi...) dva puta godišnje. Za češće izmjene tarifa je 17€/h.",
+		"reply": "Tu je uključena cijena domene i hostinga koji se moraju produžiti svake godine, tehničko održavanje, sigurnosne kopije i za naprednije stranice razni drugi servisi.",
 		"category": "pricing",
 		"open": false
 	},

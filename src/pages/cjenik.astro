@@ -7,6 +7,8 @@ import Hero from '../components/blocks/hero/PageHeader.astro'
 import Price from '../components/blocks/pricing/PricingColumns.astro'
 import FAQ from '../components/blocks/FAQ/Basic.astro'
 import CTA from '../components/blocks/CTA/BasicDark.astro'
+import Col from '../components/ui/Col.astro'
+import Row from '../components/ui/Row.astro'
 
 const SEO = {
 	title: 'WLS | Cjenik izrade web stranice',
@@ -22,6 +24,58 @@ const header = {
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero title={header.title} text={header.text} />
 	<Price />
+
+	<!-- <Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
+		<h2>Ostale usluge</h2>
+	</Col>
+	<Col span="8" align="center" classes="mb-12 max-w-4xl mx-auto">
+		<div class="relative overflow-x-auto">
+			<table class="w-full text-left text-sm text-gray-500 rtl:text-right dark:text-gray-400">
+				<thead
+					class="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400"
+				>
+					<tr>
+						<th scope="col" class="px-6 py-3"> Usluga </th>
+
+						<th scope="col" class="px-6 py-3"> Cijena </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
+						<th
+							scope="row"
+							class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
+						>
+							CMS admin sučelje za upravljanje sadržajem
+						</th>
+
+						<td class="px-6 py-4">od 30 € / mjesečno </td>
+					</tr>
+					<tr class="border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
+						<th
+							scope="row"
+							class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
+						>
+							Microsoft Surface Pro
+						</th>
+
+						<td class="px-6 py-4"> $1999 </td>
+					</tr>
+					<tr class="bg-white dark:bg-gray-800">
+						<th
+							scope="row"
+							class="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
+						>
+							Magic Mouse 2
+						</th>
+
+						<td class="px-6 py-4"> $99 </td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</Col> -->
 	<FAQ classes="bg-slate-50 dark:bg-neutral-900/40" />
+
 	<CTA />
 </Layout>

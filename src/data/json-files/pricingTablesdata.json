@@ -3,20 +3,20 @@
 		"header": {
 			"title": "StartWeb",
 			"subtitle": "",
-			"currency": "€",
-			"price": "299",
+			"currency": "od €",
+			"price": "249",
 			"priceLabel": "jednokratno",
-			"priceMontly": "60",
+			"priceMontly": "80",
 			"priceLabelMontly": "godišnje",
 			"buttonName": "Naruči",
 			"buttonLink": "/kontakt"
 		},
 		"body": {
 			"listItems": [
-				{ "listItem": "Dizajn stranice" },
-				{ "listItem": "Osnovni SEO, SSL zaštita" },
-				{ "listItem": "Kontakt forma, google karta..." },
-				{ "listItem": "Email račun" }
+				{ "listItem": "Moderan dizajn" },
+				{ "listItem": "Domena, hosting, email " },
+				{ "listItem": "Osnovni SEO, antispam zaštita" },
+				{ "listItem": "Kontakt forma, google karta" }
 			]
 		},
 		"footer": {
@@ -29,8 +29,8 @@
 		"header": {
 			"title": "ProWeb",
 			"subtitle": "",
-			"currency": "€",
-			"price": "449",
+			"currency": "od €",
+			"price": "399",
 			"priceLabel": "jednokratno",
 			"priceMontly": "80",
 			"priceLabelMontly": "godišnje",
@@ -40,8 +40,8 @@
 		"body": {
 			"listItems": [
 				{ "listItem": "Sve kao StartWeb paket +" },
-				{ "listItem": "Više podstranica" },
-				{ "listItem": "Više slika i detalja" },
+				{ "listItem": "Više podstranica, slika, detalja" },
+				{ "listItem": "Posebni fontovi, animacije" },
 				{ "listItem": "Više funkcionalnosti" }
 			]
 		},
@@ -55,10 +55,10 @@
 		"header": {
 			"title": "DynamicWeb",
 			"subtitle": "",
-			"currency": "€",
-			"price": "499+",
+			"currency": "od €",
+			"price": "499",
 			"priceLabel": "jednokratno",
-			"priceMontly": "120+",
+			"priceMontly": "200",
 			"priceLabelMontly": "godišnje",
 			"buttonName": "Naruči",
 			"buttonLink": "/kontakt"
@@ -67,7 +67,7 @@
 			"listItems": [
 				{ "listItem": "Povezivanje stranice sa bazom podataka" },
 				{
-					"listItem": "Mogućnost registracije korisnika"
+					"listItem": "Webshop, rezervacije, registracije..."
 				},
 				{
 					"listItem": "Implementacija umjetne inteligencije"

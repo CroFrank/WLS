@@ -1,10 +1,4 @@
 ---
-// Basic FAQ section
-// ------------
-// Description: A section that contains a list of frequently asked questions with answers.
-
-// Components
-// - Layout
 import Section from '../../ui/Section.astro'
 import Row from '../../ui/Row.astro'
 import Col from '../../ui/Col.astro'
@@ -32,7 +26,11 @@ const { classes } = Astro.props
 			<Card classes="divide-y divide-neutral-100 dark:divide-neutral-800">
 				<Accordion
 					title="Što uključuje održavanje?"
-					text="Konfiguriranje domene, hosting, tehničko održavanje stranice, ažuriranje sadržaja stranice 2 puta godišnje."
+					text="Osnovno održavanje iznosi 80€ godišnje te uključuje registraciju i obnovu domene, hosting, sigurnosne kopije, tehničko održavanje i podršku."
+				/>
+				<Accordion
+					title="Što utječe na cijenu održavanja?"
+					text="Osnovno održavanje iznosi 80€ godišnje, ali cijena se može povisiti ovisno o potrebama klijenta. U cijenu održavanja se može uključiti redovito ažuriranje sadržaja, naplata servisa trećih strana kao što su newsletteri, CMS admin sučelje za upravljanje sadržajem, baze podataka, veća potrošnja memorije, više mail adresa i slično."
 				/>
 				<Accordion
 					title="Koliko košta domena i hosting?"
