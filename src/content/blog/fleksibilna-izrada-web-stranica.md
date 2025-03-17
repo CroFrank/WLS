@@ -1,5 +1,5 @@
 ---
-title: 'Fleksibilnst i dostupnost'
+title: 'Fleksibilnst u pristupu i izradi'
 pubDate: 2024-08-30T05:00:00Z
 description: 'Web life support tim Vam pomaže u Vašim prvim digitalnim koracima. Izrađujemo web stranice krojene prema Vašim potrebama. S obzirom da smo i sami mali tim, prilagođavamo se i onim najmanjim projektima s opcijom kasnije nadogradnje.'
 author: 'Bojana Ninić'
@@ -9,15 +9,22 @@ tags: ['Web Life Support']
 
 ![Web life support.](/blog/logo.webp)
 
-### Web Life Support
+### Web stranice prilagođene vašim potrebama
 
-Za ostvarivanje ciljeva, najvažnija stavka je započeti, koliko god mali koraci bili oni uvijek vode prema nekom odredištu, a sa tog odredišta će stvari izgledati puno jasnije.
+Svako poslovanje je drugačije, a mi to razumijemo. Zato nudimo fleksibilne opcije izrade web stranica koje odgovaraju vašem budžetu i potrebama. Bez obzira jeste li tek na početku ili već imate razvijen posao, kod nas možete započeti s malim projektom koji može rasti zajedno s vama.
 
-> Najbolje vrijeme za napraviti web stranicu koja će predstavljati Vas, Vašu ideju ili proizvod je bilo prije nekoliko godina, ali ako to niste napravili, drugo najbolje vrijeme je upravo sada.
+> Za ostvarivanje ciljeva, najvažnija stavka je započeti, koliko god mali koraci bili oni uvijek vode prema nekom odredištu, a sa tog odredišta će stvari izgledati puno jasnije.
 
-Naš tim je fokusiran na male poduzetnike koji započinju skromno, ali sa željom i motivacijom za napretkom. Na tom putu ćemo Vas pratiti mi i prilagoditi projekt Vašem početnom budžetu, s opcijom kasnije nadogradnje i proširenja.
-U odnosu na velike agencije, imamo osobniji pristup klijentima i nema dugih čekanja za male izjmene ili popravke.
+#### Prilagodljive opcije za svaki budžet
 
-Tehnologije koje koristimo za izradu web stranica nam omogućavaju maksimalnu fleksibilnost kod izrade, tako da svaki detalj može biti napravljen prema Vašoj ideji.
+**StartWeb paket** – jednostavna, ali moderna web stranica idealna za početnike i male poduzetnike.
+
+**ProWeb paket** – dodatne funkcionalnosti i optimizacija za bolje korisničko iskustvo.
+
+**DynamicWeb rješenje** – Beskrajne mogućnosti, automatizacija procesa i dinamičnost.
+
+#### Tehnologija koja omogućuje rast
+
+Koristimo Astro framework i najnovije web tehnologije, što znači da vaša stranica može s vremenom dobivati nove funkcionalnosti bez potrebe za potpunom rekonstrukcijom. Brzina, sigurnost i optimizacija su ključne karakteristike naših rješenja.
 
 [Web Life Support](/kontakt)
