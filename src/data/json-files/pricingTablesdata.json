@@ -21,7 +21,7 @@
 		},
 		"footer": {
 			"buttonName": "Primjer stranice",
-			"buttonLink": "https://www.bonani.hr/"
+			"buttonLink": "https://start-web-nine.vercel.app/"
 		},
 		"type": "basic"
 	},
@@ -46,8 +46,8 @@
 			]
 		},
 		"footer": {
-			"buttonName": "Ova stranica je primjer",
-			"buttonLink": "/cjenik"
+			"buttonName": "Primjer stranice",
+			"buttonLink": "https://wonderink-crofranks-projects.vercel.app/"
 		},
 		"type": "basic"
 	},
