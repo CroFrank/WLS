@@ -34,7 +34,7 @@ export const navigationBarData: NavData = {
 	},
 	navItems: [
 		{ name: 'Naslovnica', link: '/' },
-		{ name: 'Cjenik', link: '/cjenik' },
+		{ name: 'Cjenik', link: '/cjenik-izrade-web-stranice' },
 		{ name: 'Blog', link: '/blog' },
 		{
 			name: 'Ostalo',
@@ -44,7 +44,9 @@ export const navigationBarData: NavData = {
 			],
 			link: '#'
 		},
-		{ name: 'Kontakt', link: '/kontakt' }
+		{ name: 'Kontakt', link: 'kontakt-za-izradu-web-stranice' }
 	],
-	navActions: [{ name: 'Upitnik', link: '/kontakt', style: 'primary', size: 'lg' }]
+	navActions: [
+		{ name: 'Upitnik', link: 'kontakt-za-izradu-web-stranice', style: 'primary', size: 'lg' }
+	]
 }

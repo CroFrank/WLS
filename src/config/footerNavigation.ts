@@ -75,7 +75,7 @@ export const footerNavigationData: FooterData = {
 				},
 				{
 					subCategory: 'Cjenik',
-					subCategoryLink: '/cjenik'
+					subCategoryLink: '/cjenik-izrade-web-stranice'
 				}
 			]
 		},
@@ -85,7 +85,7 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'Upitnik',
-					subCategoryLink: '/kontakt'
+					subCategoryLink: 'kontakt-za-izradu-web-stranice'
 				},
 				{
 					subCategory: 'Mobitel',

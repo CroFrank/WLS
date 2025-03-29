@@ -4,21 +4,18 @@ import Layout from '../layouts/Layout.astro'
 import Section from '../components/ui/Section.astro'
 import Row from '../components/ui/Row.astro'
 import Col from '../components/ui/Col.astro'
-// - UI
 import Spacer from '../components/ui/Spacer.astro'
 import Button from '../components/ui/Button.astro'
 import { Icon } from 'astro-icon/components'
 
-// Content
-// - SEO
 const SEO = {
-	title: 'Oops! WLS stranica nije pronađena - Page Not Found',
+	title: 'Stranica nije pronađena - Page Not Found - WebLifeSupport',
 	description:
 		'Izgleda da stranica koju tražite ne postoji, pokušajte se vratiti na naslovnicu Web Life Supporta.'
 }
 ---
 
-<Layout title={SEO.title} description={SEO.description}>
+<Layout title={SEO.title} description={SEO.description} noindex>
 	<Section>
 		<Row flex classes="text-center">
 			<Col span="2" />

@@ -1,16 +1,11 @@
 ---
-// - Layout
 import Section from '../../ui/Section.astro'
 import Row from '../../ui/Row.astro'
 import Col from '../../ui/Col.astro'
-// - UI
 import ChipNotification from '../../ui/ChipNotification.astro'
-import { Image } from 'astro:assets'
 import Button from '../../ui/Button.astro'
 import AvatarGroup from '../../ui/AvatarGroup.astro'
-// Content
-import heroImage from '../../../assets/index-page-hero.webp'
-// - Avatars
+
 import astro from '../../../assets/avatars/Astro.webp'
 import nextjs from '../../../assets/avatars/Next.js.webp'
 import react from '../../../assets/avatars/React.webp'
@@ -21,7 +16,11 @@ const techs = [
 ]
 ---
 
-<Section id="intro" padding="top" classes="bg-neutral-50 dark:bg-neutral-900">
+<Section
+	id="intro"
+	padding="top"
+	classes="relative flex min-h-screen items-center justify-center overflow-hidden "
+>
 	<Row>
 		<Col span="2" />
 		<Col span="8" align="center">
@@ -32,18 +31,7 @@ const techs = [
 			<h1>Izrada <strong>web stranica</strong> pouzdano, brzo i povoljno</h1>
 
 			<p class="pb-0 text-lg">Stručna podrška u Vašim prvim digitalnim koracima</p>
-			<Button size="lg" link="/kontakt">3,2,1...Go!</Button>
+			<Button size="lg" link="kontakt-za-izradu-web-stranice">3,2,1...Go!</Button>
 		</Col>
-		<Col span="2" />
-		<Col span="2" />
-		<Col span="8">
-			<Image
-				src={heroImage}
-				alt="Izrada web stranica, internet povezuje svijet"
-				class="translate-y-8 shadow-2xl shadow-neutral-200 dark:shadow-neutral-950"
-				format="webp"
-			/></Col
-		>
-		<Col span="2" />
 	</Row>
 </Section>

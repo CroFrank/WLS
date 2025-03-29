@@ -27,4 +27,4 @@ Svako poslovanje je drugačije, a mi to razumijemo. Zato nudimo fleksibilne opci
 
 Koristimo Astro framework i najnovije web tehnologije, što znači da vaša stranica može s vremenom dobivati nove funkcionalnosti bez potrebe za potpunom rekonstrukcijom. Brzina, sigurnost i optimizacija su ključne karakteristike naših rješenja.
 
-[Web Life Support](/kontakt)
+[Web Life Support](kontakt-za-izradu-web-stranice)

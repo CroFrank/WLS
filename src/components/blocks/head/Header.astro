@@ -1,13 +1,8 @@
 ---
-// Imports
 import { ViewTransitions } from 'astro:transitions'
-
-// Partials
-import Seo from './partials/Seo.astro'
-// Data
+import Seo from './Seo.astro'
 import { configData } from '../../../config/config'
 
-// Props
 type Props = {
 	title?: string
 	description?: string
@@ -15,7 +10,6 @@ type Props = {
 	canonical?: boolean
 	noindex?: boolean
 }
-// Page Metadata
 const {
 	title = configData.siteTitle,
 	description = configData.siteDescription,

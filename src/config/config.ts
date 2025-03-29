@@ -1,7 +1,3 @@
-// Config
-// ------------
-// Description: The configuration file for the website.
-
 export interface Logo {
 	src: string
 	alt: string
@@ -21,9 +17,9 @@ export interface Config {
 }
 
 export const configData: Config = {
-	siteTitle: 'Web Life Support',
+	siteTitle: 'Izrada modernih web stranica – brzo, povoljno, uz podršku!',
 	siteDescription:
-		'Izrada brzih i modernih web stranica za male poduzetnike i startupove. Predstavite svoje ideje svijetu uz pomoć najnovijih tehnologija. Kontaktirajte nas danas!',
+		'Izrada modernih i brzih web stranica. Besplatno savjetovanje i tehnička podrška za vaše prve digitalne korake. WebLifeSupport – vaš web stručnjak!',
 	ogImage: '/logo.svg',
 	logo: {
 		src: '/logo.svg',

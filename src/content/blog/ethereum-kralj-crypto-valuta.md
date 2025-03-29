@@ -61,4 +61,4 @@ Ako mjerimo dominaciju po čistoj vrijednosti, Bitcoin možda zauzima tron. No, 
 
 Ethereum nije samo mreža. To je platforma koja omogućuje izgradnju budućnosti financija, vlasništva i aplikacija.
 
-Vaš korak u svijet crypto valuta - [Web Life Support](/kontakt)
+Vaš korak u svijet crypto valuta - [Web Life Support](kontakt-za-izradu-web-stranice)

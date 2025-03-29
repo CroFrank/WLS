@@ -9,7 +9,7 @@
 			"priceMontly": "80",
 			"priceLabelMontly": "godišnje",
 			"buttonName": "Naruči",
-			"buttonLink": "/kontakt"
+			"buttonLink": "kontakt-za-izradu-web-stranice"
 		},
 		"body": {
 			"listItems": [
@@ -35,7 +35,7 @@
 			"priceMontly": "80",
 			"priceLabelMontly": "godišnje",
 			"buttonName": "Naruči",
-			"buttonLink": "/kontakt"
+			"buttonLink": "kontakt-za-izradu-web-stranice"
 		},
 		"body": {
 			"listItems": [
@@ -61,7 +61,7 @@
 			"priceMontly": "200",
 			"priceLabelMontly": "godišnje",
 			"buttonName": "Naruči",
-			"buttonLink": "/kontakt"
+			"buttonLink": "kontakt-za-izradu-web-stranice"
 		},
 		"body": {
 			"listItems": [

@@ -9,15 +9,15 @@ export const POST: APIRoute = async ({ request, redirect }) => {
 	const lovac = formData.get('lovac')?.toString()
 	if (request.method !== 'POST') {
 		console.log('Method Not Allowed')
-		return redirect('/kontakt')
+		return redirect('kontakt-za-izradu-web-stranice')
 	}
 	if (!email || checkbox !== 'on') {
 		console.log('Nisu popunjena obavezna polja')
-		return redirect('/kontakt')
+		return redirect('kontakt-za-izradu-web-stranice')
 	}
 	if (lovac) {
 		console.log('honeypot spam detected')
-		return redirect('/kontakt')
+		return redirect('kontakt-za-izradu-web-stranice')
 	}
 
 	const response = await fetch(`https://submit-form.com/${formSpar}`, {
@@ -28,7 +28,7 @@ export const POST: APIRoute = async ({ request, redirect }) => {
 
 	if (!response.ok) {
 		console.log('response error')
-		return redirect('/kontakt')
+		return redirect('kontakt-za-izradu-web-stranice')
 	}
 	return redirect(`/success-page?email=${email}`)
 }

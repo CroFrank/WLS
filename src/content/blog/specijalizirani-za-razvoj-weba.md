@@ -31,4 +31,4 @@ Prilagođena rješenja – svaka stranica je napravljena prema vašim potrebama.
 
 Osobni pristup – znamo tko ste, znamo što vam treba, i tretiramo svaki projekt kao vlastiti.
 
-Vaš projekt, naš prioritet – [Web Life Support](/kontakt)
+Vaš projekt, naš prioritet – [Web Life Support](kontakt-za-izradu-web-stranice)

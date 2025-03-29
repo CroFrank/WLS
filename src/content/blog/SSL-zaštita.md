@@ -18,7 +18,7 @@ SSL je tehnologija zaštite podataka koje unosite na nekoj web stranici, a oni k
 - **Autentičnost servera**: Pošto samo server web stranice koju posjećujete zna kako dešifrirati SSL zaštitu, smanjuje se šansa da komunicirate sa zlonamjernim serverom.
 - **SEO benefiti**: Web pretraživači kao što je Google daju prednostu u rangiranju stranicama sa SSL zaštitom.
 
-  Izrada web stranica za SSL zaštitom - [Web Life Support](/kontakt)
+  Izrada web stranica za SSL zaštitom - [Web Life Support](kontakt-za-izradu-web-stranice)
 
 #### Koja je razlika između TLS i SSL protokola
 

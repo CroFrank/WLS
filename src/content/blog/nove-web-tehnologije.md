@@ -36,4 +36,4 @@ Astro koristi Island Architecture, revolucionarni pristup koji omogućuje učita
 
 Ako vam sve ovo zvuči previše tehnički, nema razloga za brigu. Naš tim brine se o svemu – vi samo trebate znati da će vaša web stranica biti brza, moderna i optimizirana prema najnovijim web standardima. Ako želite web stranicu koja je u korak s vremenom, sigurna i prilagođena vašim potrebama, kontaktirajte nas!
 
-Izrada web stranica as Astro tehnologijom - [Web Life Support](/kontakt)
+Izrada web stranica as Astro tehnologijom - [Web Life Support](kontakt-za-izradu-web-stranice)
