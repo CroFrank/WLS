@@ -29,9 +29,16 @@ const {
 		canonical={canonical}
 		noindex={noindex}
 	/>
-	<link rel="icon" href={configData.logo.src} type="image/svg+xml" />
+	<link rel="icon" href="/favicon32.png" sizes="32x32" type="image/png" />
+	<link rel="icon" href="/favicon16.png" sizes="16x16" type="image/png" />
+	<link rel="apple-touch-icon" href="/favicon180.png" sizes="180x180" />
+	<link rel="icon" href="/favicon128.ico" sizes="128x128" type="image/x-icon" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="icon" type="image/svg+xml" href="logo.svg" />
+
 	<link rel="sitemap" href="/sitemap-index.xml" />
 	<meta name="generator" content={Astro.generator} />
 	<meta name="theme-color" content="#134e4a" />
+	<meta name="author" content="weblifesupport.com" />
 	<ViewTransitions fallback="swap" />
 </head>
