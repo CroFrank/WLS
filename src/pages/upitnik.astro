@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro'
+import UpitnikForm from '../components/UpitnikForm'
+---
+
+<Layout>
+	<section class="bg-gray-100 px-4 py-16">
+		<div class="mx-auto max-w-4xl">
+			<h1 class="mb-10 text-center text-3xl font-bold">Upitnik za izradu web stranice</h1>
+			<p>Nije potrebno popuniti sva polja, popunite ono što znate.</p>
+			<p>
+				Stranice izrađujemo u najmodernijoj tehnologiji tako da su moguće nadogradnje u bilo kojem
+				trenutku. Možete započeti sa jednostavnijim projektom i po potrebi dodavati funkcionalnosti.
+				Neka vaša web stranica raste zajedno s vašim poslovanjem.
+			</p>
+			<UpitnikForm client:load />
+		</div>
+	</section>
+</Layout>

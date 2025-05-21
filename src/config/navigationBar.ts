@@ -46,7 +46,5 @@ export const navigationBarData: NavData = {
 		},
 		{ name: 'Kontakt', link: 'kontakt-za-izradu-web-stranice' }
 	],
-	navActions: [
-		{ name: 'Upitnik', link: 'kontakt-za-izradu-web-stranice', style: 'primary', size: 'lg' }
-	]
+	navActions: [{ name: 'Upitnik', link: 'upitnik', style: 'primary', size: 'lg' }]
 }
