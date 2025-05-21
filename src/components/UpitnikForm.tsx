@@ -295,7 +295,7 @@ export default function UpitnikForm() {
 
 				<label className="mb-2 mt-4 block">Imate li što za nadodati?</label>
 				<textarea
-					name="externalIntegrations"
+					name="ostalo"
 					value={form.ostalo}
 					onChange={handleChange}
 					className="w-full rounded border p-2"
